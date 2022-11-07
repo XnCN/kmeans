@@ -92,11 +92,8 @@ export default function Home() {
           )}
 
           {current == 3 &&
-            results.map(({ iteration, iterationResult }) => (
-              <ResultTable
-                iteration={iteration}
-                iterationResult={iterationResult}
-              />
+            results.map(({ iteration }) => (
+              <ResultTable iteration={iteration} />
             ))}
         </div>
       </div>

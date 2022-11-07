@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Table, TableColumnProps } from "@arco-design/web-react";
 import IIteration from "../src/interfaces/IIteration";
-import IIterationResult from "../src/interfaces/IIterationResult";
 
 type Props = {
   iteration: IIteration;
-  iterationResult: IIterationResult;
 };
 
-export default function ResultTable({ iteration, iterationResult }: Props) {
+export default function ResultTable({ iteration }: Props) {
   const [data, setData] = useState<any>();
   const [columns, setColumns] = useState<TableColumnProps[]>();
 
