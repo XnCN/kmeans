@@ -28,7 +28,7 @@ export default function ResultTable({ iteration, iterationResult }: Props) {
 
     const columns: TableColumnProps[] = [
       {
-        title: "xi",
+        title: "Xi",
         dataIndex: "xi",
       },
       ...clusters,
